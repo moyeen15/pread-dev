@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+<meta charset="UTF-8" />
+<title>Pre-Advising System</title>
+<link rel="stylesheet" type="text/css" media="all" href="styles/styles.css" />
 </head>
 <body>
-    
+
+<h1>Presidency University Pre-Advising System</h1>
+
+<p>This is a demonstration of the HTML5 drag &amp; drop API which retrieves file information.</p>
+
+<form id="upload" action="index.html" method="POST" enctype="multipart/form-data">
+
+<fieldset>
+<legend>File Upload</legend>
+
+<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+
+<div>
+	<label for="fileselect">Files to upload:</label>
+	<input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+	<div id="filedrag">or drop files here</div>
+</div>
+
+<div id="submitbutton">
+	<button type="submit">Upload Files</button>
+</div>
+
+</fieldset>
+
+</form>
+
+<div id="messages">
+<p>Status Messages</p>
+</div>
+
+<script src="scripts/filedrag.js"></script>
 </body>
 </html>
